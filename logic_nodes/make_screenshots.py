@@ -11,6 +11,10 @@ USAGE:
     during the run, but the screenshots should be correct nonetheless.
     It is still advised to check them afterwards.
 
+    For keeping the images repository size small, please only commit
+    screenshots with visible changes. Even if nothing changed with the
+    node, the screenshot file could have been changed.
+
     Runnning this script from the command line does not work (even if
     run with a window and UI) because command line scripts are executed
     before any OpenGL call is done (1).
