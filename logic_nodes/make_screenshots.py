@@ -63,6 +63,9 @@ def take_screenshot(file_path: str, editor: bpy.types.SpaceNodeEditor, nodetype:
     # Show the entire node on the screen.
     node.location[1] += node.dimensions[1] + (node.dimensions[1] % GRID_SIZE)
 
+    # Discard dynamic label
+    node.label = node.bl_label
+
     # Take a screenshot of the active area
     bpy.ops.screen.screenshot("EXEC_DEFAULT", filepath=file_path, full=False)
 
