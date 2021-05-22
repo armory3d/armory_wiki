@@ -9,10 +9,8 @@ COLORS = {
     "dynamic": "63c763",
     "float": "a1a1a1",
     "integer": "0f8526",
-    "material": "63c763",
     "object": "268cbf",
     "string": "70b2ff",
-    "transform": "63c763",
     "vector": "6363c7"
 }
 
