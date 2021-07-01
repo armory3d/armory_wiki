@@ -2,14 +2,15 @@
 Takes screenshots from all of Armory's logic nodes.
 
 WARNING:
-    this script will reset your theme, so make sure it's saved!
+    this script will reset your Blender theme, so make sure it's saved!
 
 USAGE:
     Set the OUTPUT_PATH variable to the "logic_nodes" directory of the
-    Armory wiki images repository. Then, open this file in Blender's
-    text editor in a new blender file and run it. Blender might freeze
-    during the run, but the screenshots should be correct nonetheless.
-    It is still advised to check them afterwards.
+    Armory wiki images repository (it's a raw string, no escaping is
+    required). Then, open this file in Blender's text editor in a new
+    blender file and run it. Blender might freeze during the run, but
+    the screenshots should be correct nonetheless. It is still advised
+    to check them afterwards.
 
     For keeping the images repository size small, please only commit
     screenshots with visible changes. Even if nothing changed with the
@@ -41,7 +42,7 @@ except ImportError:
 
 from arm.logicnode import arm_nodes
 
-OUTPUT_PATH = "SET_THIS_AS_DESCRIBED_IN_THE_MODULE_DOCSTRING"
+OUTPUT_PATH = r"SET_THIS_AS_DESCRIBED_IN_THE_MODULE_DOCSTRING"
 GRID_SIZE = 20
 MARGIN = 20
 
