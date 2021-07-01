@@ -24,6 +24,7 @@ USAGE:
 import ensurepip
 import os
 import subprocess
+import sys
 from typing import List, Optional
 
 import bpy
@@ -34,7 +35,7 @@ except ImportError:
     # Try to install Pillow into Blender's Python installation
     ensurepip.bootstrap()
     os.environ.pop("PIP_REQ_TRACKER", None)
-    subprocess.check_output([bpy.app.binary_path_python, '-m', 'pip', 'install', 'Pillow'])
+    subprocess.check_output([sys.executable, '-m', 'pip', 'install', 'Pillow'])
 
     from PIL import Image
 
