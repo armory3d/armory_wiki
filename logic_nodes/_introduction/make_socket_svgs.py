@@ -10,6 +10,7 @@ COLORS = {
     "float": "a1a1a1",
     "integer": "0f8526",
     "object": "268cbf",
+    "rotation": "ad389e",
     "string": "70b2ff",
     "vector": "6363c7"
 }
