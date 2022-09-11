@@ -69,7 +69,7 @@ def take_screenshot(file_path: str, editor: bpy.types.SpaceNodeEditor, nodetype:
     node.label = node.bl_label
 
     # Take a screenshot of the active area
-    bpy.ops.screen.screenshot("EXEC_DEFAULT", filepath=file_path, full=False)
+    bpy.ops.screen.screenshot_area("EXEC_DEFAULT", filepath=file_path)
 
     area = bpy.context.area
     # -1 = WINDOW region
