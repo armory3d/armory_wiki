@@ -99,7 +99,7 @@ def take_screenshot(file_path: str, editor: bpy.types.SpaceNodeEditor, nodetype:
     cropped: Image = img.crop((left, top, right, bottom))
     # Scale a bit down
     maxsize = (400, 1000)
-    cropped.thumbnail(maxsize, Image.ANTIALIAS)
+    cropped.thumbnail(maxsize, Image.BICUBIC)
     # 95 = best quality as per Pillow documentation
     cropped.save(os.path.splitext(file_path)[0] + ".jpg", "JPEG", quality=95)
 
